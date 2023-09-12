@@ -108,7 +108,7 @@ resource "spotinst_ocean_aws" "this" {
 
 module "ocean-controller" {
   source     = "spotinst/ocean-controller/spotinst"
-  version    = "~> 0.35"
+  version    = "~> 0.47"
   depends_on = [module.eks]
 
   create_controller   = var.create_ocean
